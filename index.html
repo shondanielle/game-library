@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#" id="home-link">Home</a></li>
+                <li><a href="#" id="popular-link">Popular Games</a></li>
+                <li><a href="#" id="top-link">Top Games</a></li>
+                <li><a href="#" id="developers-link">Developers</a></li>
+                <li><a href="#" id="genres-link">Genres</a></li>
+                <li><input type="text" id="search" placeholder="Search games..."></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="landing">
+        <h1>GAMEVAULT</h1>
+    </section>
+    <section id="home" class="hidden">
+        <h2>Popular Games</h2>
+        <ul id="popular-games" class="game-list"></ul>
+        <div id="pagination-controls-popular"></div>
+    </section>
+    <section id="single-page" class="hidden">
+        <h2 id="single-page-title"></h2>
+        <ul id="single-page-games" class="game-list"></ul>
+        <div id="pagination-controls"></div>
+    </section>
+    <section id="developers" class="hidden">
+        <h2>Developers</h2>
+        <ul id="developers-list" class="game-list"></ul>
+        <div id="pagination-controls-developers"></div>
+    </section>
+    <section id="game-details" class="hidden">
+        <button id="back-button">Back</button>
+        <h2 id="game-title"></h2>
+        <img id="game-image" src="" alt="">
+        <p id="game-description"></p>
+        <ul id="game-info"></ul>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

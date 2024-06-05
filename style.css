@@ -1,0 +1,144 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    color: #fff;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a, nav ul li input {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    font-size: 20px;
+}
+
+nav ul li input {
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+#landing {
+    background-image: url('photos/bg.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+#landing h1 {
+    font-size: 250px;
+    margin: 0;
+    text-shadow: 2px 2px 16px #000000;
+}
+
+.hidden {
+    display: none;
+}
+
+#home, #single-page, #developers, #game-details {
+    padding: 60px 20px 20px;
+}
+
+.game-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.game-list li {
+    margin: 20px;
+    text-align: center;
+}
+
+.game-list li img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+#developers-list li img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+#game-details img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+#back-button {
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#pagination-controls, #pagination-controls-popular, #pagination-controls-developers {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.page-button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    background: #fff;
+    cursor: pointer;
+}
+
+.page-button.active {
+    background: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+.page-button:hover {
+    background: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+#search {
+    color: white;
+    background-color: rgb(0, 0, 111);
+}
